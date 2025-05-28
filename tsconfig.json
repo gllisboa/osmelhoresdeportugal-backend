@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2016", // Ou versão mais recente como ES2020/ESNext
+    "module": "CommonJS", // Sistema de módulos padrão para Node.js
+    "outDir": "./dist", // Onde o JavaScript compilado irá
+    "rootDir": "./src", // Onde o seu código TypeScript vive
+    "strict": true, // Ativar todas as verificações de tipo estritas (recomendado)
+    "esModuleInterop": true, // Permitir imports padrão de módulos commonjs
+    "skipLibCheck": true, // Ignorar verificação de tipos de ficheiros de declaração
+    "forceConsistentCasingInFileNames": true, // Forçar nomes de ficheiros consistentes
+    "resolveJsonModule": true, // Permitir importar ficheiros JSON
+    "sourceMap": true, // Gerar source maps para depuração mais fácil
+    "baseUrl": "./src", // Base para resolução de módulos (útil para imports absolutos)
+    "paths": { // Opcional: Definir aliases de caminho
+      "@/*": ["*"]
+    }
+  },
+  "include": ["src/**/*"], // Quais ficheiros o TypeScript deve compilar
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"] // Pastas/ficheiros a ignorar
+}

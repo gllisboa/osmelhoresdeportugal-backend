@@ -1,0 +1,15 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "plugin:@typescript-eslint/recommended", // Regras recomendadas do TypeScript ESLint
+      "plugin:prettier/recommended", // Integra Prettier com ESLint
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020, // Ou a versão do ECMAScript que está a usar
+      "sourceType": "module",
+    },
+    "rules": {
+      // Adicione ou sobrescreva regras aqui, se necessário
+      // Exemplo: "@typescript-eslint/explicit-function-return-type": "off",
+    },
+  }
